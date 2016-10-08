@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+  z-index: 1;
+}
+
+#world {
+  width: 700px; height: 300px;
+  background-color: pink;
+  position: relative;
+  margin: auto;
+  z-index: 500;
+}
+
+#character {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+  background-color: grey;
+  background: url('../images/character.png') no-repeat;
+}
+
+  #character.front-right { background-position: 0px 0px; }
+  #character.front-stand { background-position: -32px 0px; }
+  #character.front-left { background-position: -64px 0px; }
+
+  #character.left-right { background-position: 0px -32px; }
+  #character.left-stand { background-position: -32px -32px; }
+  #character.left-left { background-position: -64px -32px; }
+
+  #character.right-right { background-position: -64px -64px; }
+  #character.right-stand { background-position: -32px -64px; }
+  #character.right-left { background-position: -0px -64px; }
+
+  #character.back-right { background-position: 0px -96px; }
+  #character.back-stand { background-position: -32px -96px; }
+  #character.back-left { background-position: -64px -96px; }
+
+  /*.encounters {
+    position: absolute;
+	  width: 32px;
+	  height: 32px;
+    background-color: white;
+    z-index: 1000;
+  }*/
+
+  #encounter1 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-color: red;
+    left: 300px;
+    top: 150px;
+    z-index: 9999;
+  }
+
+  #encounter2 {
+
+  }
+
+  #encounter3 {
+
+  }
