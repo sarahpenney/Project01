@@ -1,53 +1,16 @@
-
-
-
+$(function() {
 
   var currentKey;
   var TimerWalk;
   var charStep = 2;
   var charSpeed = 400;
+  var $character = $('#character');
+  var $encounter1 = $('#encounter1');
+
+  $character.addClass('front-stand');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   $(document).ready(function() {
- 	$('#character').addClass('front-stand');
-
-   });
 
   $(document).keydown(function(e) {
     if (!currentKey) {
@@ -85,7 +48,7 @@
       clearInterval(TimerWalk);
 
       //finish the character's movement
-      $('#character').stop(true, true);
+      $character.stop(true, true);
 
     }
 
@@ -115,37 +78,75 @@
     if (charStep == 5) charStep = 1;
 
     //remove the current class
-    $('#character').removeAttr('class');
+    $character.removeAttr('class');
 
     //add the new class
     switch(charStep) {
-      case 1: $('#character').addClass(dir+'-stand'); break;
-      case 2: $('#character').addClass(dir+'-right'); break;
-      case 3: $('#character').addClass(dir+'-stand'); break;
-      case 4: $('#character').addClass(dir+'-left');  break;
+      case 1: $character.addClass(dir+'-stand'); break;
+      case 2: $character.addClass(dir+'-right'); break;
+      case 3: $character.addClass(dir+'-stand'); break;
+      case 4: $character.addClass(dir+'-left');  break;
     }
+
+    var pos = $character.position();
 
     //move the char
     //we will only want to move the character 32px (which is 1 unit) in any direction
     switch(dir) {
-      case'front':
-        $('#character').animate({top: '+=32'}, charSpeed);
-        break;
-      case'back':
-        //don't let the character move any further up if they are already at the top of the screen
-        if ($('#character').position().top > 0) {
-          $('#character').animate({top: '-=32'}, charSpeed);
-        }
-        break;
-      case'left':
-      //don't let the character move any further left if they are already at the left side of the screen
-      if ($('#character').position().left > 0) {
-          $('#character').animate({left: '-=32'}, charSpeed);
-        }
-        break;
-      case'right':
-        $('#character').animate({left: '+=32'}, charSpeed);
-        break;
-      }
+    case'front':
+      pos.top += 32;
+      break;
+    case'back':
+      //don't let the character move any further up if they are already at the top of the screen
+      if ($character.position().top > 0) pos.top -=32;
+      break;
+    case'left':
+    //don't let the character move any further left if they are already at the left side of the screen
+      if ($character.position().left > 0) pos.left -=32;
+      break;
+    case'right':
+      pos.left += 32;
+      break;
+    }
 
+    $character.animate(pos, charSpeed, function() {
+      if(checkIfCloseEncounter()) {
+        console.log("show the text!");
+
+        ////here is where I have to make text/choice box appear!!!! ///////////////////////////////////////////////////////////////
+//inner.HTML into the div created.
+
+      }
+    });
   }
+
+  // $('#encounterTalk').on(checkIfCloseEncounter() {
+  //   $(this).show(5000).innerHTML = ('this is working');
+  //   #world.append()
+  // });
+  //
+  // $(function(){
+  //   var $talk = $('.character');
+  //   $('character').on('checkIfCloseEncounter()', function(){ //makes element HIDE slowly then show again at normal speed. Can also use .fadeout .fadein
+  //     var $talk = $(this);
+  //     $(this).hide(5000, function() {
+  //       $li.show();
+  //       $.append($li); //will make li attach to the end on others.
+  //     });
+  //   });
+  // });
+
+
+
+  function checkIfCloseEncounter() {
+    var charPos = $character.position();
+    var encounterPos = $encounter1.position();
+
+    encounterPos.bottom = encounterPos.top + $encounter1.height();
+    encounterPos.right = encounterPos.left + $encounter1.width();
+
+    return charPos.top >= encounterPos.top && charPos.top <= encounterPos.bottom &&
+      charPos.left >= encounterPos.left && charPos.left <= encounterPos.right;
+  }
+
+});

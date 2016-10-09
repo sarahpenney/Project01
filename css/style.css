@@ -1,6 +1,15 @@
 body {
   background-color: black;
-  z-index: 1;
+}
+
+#encounterTalk {
+  /*margin: auto;
+  top: 500px;*/
+  width: 600px; height: 250px;
+  background-color: red;
+  color: purple;
+  z-index: 9999;
+  position: absolute;
 }
 
 #world {
@@ -8,7 +17,6 @@ body {
   background-color: pink;
   position: relative;
   margin: auto;
-  z-index: 500;
 }
 
 #character {
@@ -47,18 +55,20 @@ body {
 
   #encounter1 {
     position: absolute;
-    width: 42px;
-    height: 42px;
+    width: 100px;
+    height: 100px;
     background-color: red;
     left: 300px;
-    top: 150px;
+    top: 100px;
     z-index: 9999;
+    background: url('../images/woman.png') no-repeat;
+    background-size: 100%;
   }
 
-  #encounter2 {
+  /*#encounter2 {
 
   }
 
   #encounter3 {
 
-  }
+  }*/
