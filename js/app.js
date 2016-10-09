@@ -110,31 +110,20 @@ $(function() {
     }
 
     $character.animate(pos, charSpeed, function() {
-      if(checkIfCloseEncounter()) {
-        console.log("show the text!");
+      // if(checkIfCloseEncounter()) {
+      //   console.log("show the text!");
+      //   $('#encounterTalk').show();
 
-        ////here is where I have to make text/choice box appear!!!! ///////////////////////////////////////////////////////////////
-//inner.HTML into the div created.
 
+        if(checkIfCloseEncounter()) {
+                console.log("show the text!");
+                $('#encounterTalk').show();
+        } else {
+                $('#encounterTalk').hide();
+        }
       }
-    });
+    );
   }
-
-  // $('#encounterTalk').on(checkIfCloseEncounter() {
-  //   $(this).show(5000).innerHTML = ('this is working');
-  //   #world.append()
-  // });
-  //
-  // $(function(){
-  //   var $talk = $('.character');
-  //   $('character').on('checkIfCloseEncounter()', function(){ //makes element HIDE slowly then show again at normal speed. Can also use .fadeout .fadein
-  //     var $talk = $(this);
-  //     $(this).hide(5000, function() {
-  //       $li.show();
-  //       $.append($li); //will make li attach to the end on others.
-  //     });
-  //   });
-  // });
 
 
 

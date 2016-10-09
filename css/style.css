@@ -2,21 +2,23 @@ body {
   background-color: black;
 }
 
-#encounterTalk {
-  /*margin: auto;
-  top: 500px;*/
-  width: 600px; height: 250px;
-  background-color: red;
-  color: purple;
-  z-index: 9999;
-  position: absolute;
-}
-
 #world {
   width: 700px; height: 300px;
   background-color: pink;
   position: relative;
   margin: auto;
+}
+
+#encounterTalk {
+  margin: auto;
+  left: 450px;
+  width: 1000px; height: 250px;
+  background-color: red;
+  color: purple;
+  z-index: 9999;
+  position: absolute;
+  background: url('../images/textbox.png') no-repeat;
+  display: none
 }
 
 #character {
