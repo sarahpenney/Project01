@@ -11,15 +11,23 @@ body {
 
 #encounterTalk {
   margin: auto;
-  left: 450px;
-  width: 1000px; height: 250px;
-  background-color: red;
+  left: 10px;
+  width: 500px; height: 250px;
   color: purple;
   z-index: 9999;
-  position: absolute;
+  position: relative;
   background: url('../images/textbox.png') no-repeat;
-  display: none
+  /*display: none*/
 }
+
+.buttons1 {
+  margin: auto;
+  top: 800px;
+  left: 100px;
+  display: inline-block;
+
+}
+
 
 #character {
   position: absolute;
