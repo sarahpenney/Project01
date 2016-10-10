@@ -52,3 +52,11 @@ img {
   position: relative;
   display: none;
 }
+
+.buttons1 {
+  position: relative;
+  /*float: right;*/*/
+  left: 900;
+  top: -120;
+  z-index: 9999;
+}

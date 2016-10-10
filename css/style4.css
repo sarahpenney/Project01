@@ -8,3 +8,9 @@ img {
   height: 90%;
   width: 90%;
 }
+
+.gurutalk {
+  width: 600px; height: 250px;
+  position: absolute;
+  left: -200px;
+}

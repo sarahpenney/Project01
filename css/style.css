@@ -11,20 +11,19 @@ body {
 
 #encounterTalk {
   margin: auto;
-  left: 190px;
+  left: 185px;
   width: 900px; height: 250px;
   color: purple;
   z-index: 9999;
   position: relative;
-  /*background: url('../images/textBox.png') no-repeat;*/
   display: none;
 }
 
 .buttons1 {
-  margin: auto;
-  top: 800px;
-  left: 100px;
-  display: inline-block;
+ position: relative;;
+ float: right;
+ left: -510px;
+ top: 135px;
 
 }
 
