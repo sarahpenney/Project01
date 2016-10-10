@@ -16,7 +16,7 @@ body {
   color: purple;
   z-index: 9999;
   position: relative;
-  background: url('../images/textBox.png') no-repeat;
+  /*background: url('../images/textBox.png') no-repeat;*/
   display: none;
 }
 
