@@ -17,7 +17,7 @@ body {
   z-index: 9999;
   position: relative;
   background: url('../images/textBox.png') no-repeat;
-  display: none
+  display: none;
 }
 
 .buttons1 {
