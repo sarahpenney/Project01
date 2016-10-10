@@ -4,9 +4,10 @@ body {
 
 #world {
   width: 700px; height: 300px;
-  background-color: pink;
+  background-color: #363636;
   position: relative;
   margin: auto;
+  background: url('../images/spiderWorld.png') no-repeat;
 }
 
 #encounterTalk {
@@ -36,7 +37,7 @@ body {
   width: 32px;
   height: 32px;
   background-color: grey;
-  background: url('../images/character.png') no-repeat;
+  background: url('../images/spider.png') no-repeat;
 }
 
   #character.front-right { background-position: 0px 0px; }
@@ -68,10 +69,10 @@ body {
     width: 100px;
     height: 100px;
     background-color: red;
-    left: 300px;
-    top: 100px;
+    left: 280px;
+    top: 70px;
     z-index: 9999;
-    background: url('../images/woman.png') no-repeat;
+    background: url('../images/fly.png') no-repeat;
     background-size: 100%;
   }
 
