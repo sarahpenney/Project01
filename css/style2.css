@@ -33,7 +33,7 @@ body {
 #character {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 200px;
   width: 32px;
   height: 32px;
   background-color: grey;
