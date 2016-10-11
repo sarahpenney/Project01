@@ -1,0 +1,74 @@
+#character {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 96px;
+  height: 96px;
+  background-color: grey;
+  background: url('../images/bearSprite.png') no-repeat;
+  z-index: 9999;
+}
+
+  #character.front-right { background-position: 0px 0px; }
+  #character.front-stand { background-position: -96px 0px; }
+  #character.front-left { background-position: -192px 0px; }
+
+  #character.left-right { background-position: 0px -96px; }
+  #character.left-stand { background-position: -96px -96px; }
+  #character.left-left { background-position: -192px -96px; }
+
+  #character.right-right { background-position: -192px -192px; }
+  #character.right-stand { background-position: -96px -192px; }
+  #character.right-left { background-position: -0px -192px; }
+
+  #character.back-right { background-position: 0px -288px; }
+  #character.back-stand { background-position: -96px -288px; }
+  #character.back-left { background-position: -192px -288px; }
+
+  .encounter {
+    display: none;
+  }
+
+  .encounter.active {
+    display: block;
+  }
+
+  #encounter1 {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-color: red;
+    left: 300px;
+    top: 90px;
+    z-index: 9999;
+  }
+
+  #encounter2 {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-color: red;
+    left: 700px;
+    top: 490px;
+    z-index: 9999;
+  }
+
+  #encounter3 {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-color: red;
+    left: 1000px;
+    top: 290px;
+    z-index: 9999;
+  }
+
+  #encounter4 {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-color: red;
+    left: 200px;
+    top: 490px;
+    z-index: 9999;
+  }

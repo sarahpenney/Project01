@@ -7,10 +7,19 @@ img {
   margin-top: 100px;
   height: 90%;
   width: 90%;
+  position: absolute;
 }
 
 .gurutalk {
   width: 600px; height: 250px;
   position: absolute;
   left: -200px;
+  z-index: 8000;
+}
+
+#accept {
+  position: absolute;
+left: 360px;
+top: 300px;
+  z-index: 9999;
 }
