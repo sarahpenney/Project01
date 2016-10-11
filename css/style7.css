@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+}
+
+#gameover {
+  margin-top: 250px;
+  margin-left: 450px;
+}
+
+iframe {
+  display: none;
+}

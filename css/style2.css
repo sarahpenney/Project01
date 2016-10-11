@@ -15,7 +15,7 @@ body {
   left: 120px;
   width: 900px; height: 250px;
   color: purple;
-  z-index: 9999;
+  z-index: 8888;
   position: relative;
   display: none;
 }
@@ -70,7 +70,7 @@ body {
     background-color: red;
     left: 280px;
     top: 70px;
-    z-index: 9999;
+    z-index: 8888;
     background: url('../images/fly.png') no-repeat;
     background-size: 100%;
   }
@@ -82,3 +82,68 @@ body {
   #encounter3 {
 
   }*/
+
+  #correctAnswer {
+    /*display: none;*/
+    width: 54%;
+    height: 85%;
+    position: absolute;
+    left: 350px;
+    z-index: 9999;
+    background-color: black;
+  }
+
+  #wrongAnswer1 {
+    /*display: none;*/
+    width: 54%;
+    height: 85%;
+    position: absolute;
+    left: 350px;
+    z-index: 9999;
+    background-color: black;
+  }
+
+  #wrongAnswer2 {
+    /*display: none;*/
+    width: 54%;
+    height: 85%;
+    position: absolute;
+    left: 350px;
+    z-index: 9999;
+    background-color: black;
+  }
+
+  .spiderbuttons {
+   position: relative;
+   /*float: right;*/
+   left: 27px;
+   top: 155px;
+   color: white;
+   background-color: black;
+  }
+
+  .guess {
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    width: 770px;
+    height: 50px;
+    margin-top: 0px;
+    left: -300px;
+    z-index: 9999
+  }
+
+  .awaiting {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    width: 770px;
+    height: 50px;
+    margin-top: 0px;
+    left: -300px;
+    z-index: 9999
+  }
+
+  iframe {
+    display: none;
+  }

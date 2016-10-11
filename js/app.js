@@ -7,9 +7,31 @@ $(function() {
   var $character = $('#character');
   var $encounter1 = $('#encounter1');
 
+
+  var $correctAnswer = $('#correctAnswer').hide();
+  var $infectBaby = $('#infectBaby');
+  $("#infectBaby").click(function() {
+    console.log('clicked');
+    $("#correctAnswer").show();
+    });
+
+  var $wrongAnswer1 = $('#wrongAnswer1').hide();
+  var $wrong1 = $('#wrong1');
+  $("#wrong1").click(function() {
+    console.log('clicked');
+    $("#wrongAnswer1").show();
+    });
+
+  var $wrongAnswer2 = $('#wrongAnswer2').hide();
+  var $wrong2 = $('#wrong2');
+  $("#wrong2").click(function() {
+    console.log('clicked');
+    $("#wrongAnswer2").show();
+    });
+
+
+
   $character.addClass('front-stand');
-
-
 
 
   $(document).keydown(function(e) {
@@ -66,7 +88,6 @@ $(function() {
 
     //set the interval timer to continually move the character
     TimerWalk = setInterval(function() { processWalk(dir); }, charSpeed);
-
   }
 
   //Process Character Walk Function
@@ -116,17 +137,14 @@ $(function() {
 
 
         if(checkIfCloseEncounter()) {
-                console.log("show the text!");
-                $('#encounterTalk').show();
+          console.log("show the text!");
+          $('#encounterTalk').show();
         } else {
-                $('#encounterTalk').hide();
+          $('#encounterTalk').hide();
         }
       }
     );
   }
-
-
-
   function checkIfCloseEncounter() {
     var charPos = $character.position();
     var encounterPos = $encounter1.position();
@@ -139,3 +157,9 @@ $(function() {
   }
 
 });
+/////////////////////////////////////////////////CHOICE ANSWER DISPLAY
+
+function correctAns() {
+  console.log($("#infectBaby"));
+}
+correctAns();

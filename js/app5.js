@@ -114,10 +114,6 @@ $(function() {
     );
   }
 
-
-
-
-
   function checkIfCloseEncounter() {
     var charPos = $character.position();
     var $encounter = $encounters.filter('.active');

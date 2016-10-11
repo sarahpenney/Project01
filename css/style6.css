@@ -1,0 +1,16 @@
+
+
+#bear {
+  margin-left: 200px;
+  top: 100px;
+  position: absolute;
+  display: block;
+}
+
+/*iframe {
+  display: none;
+}*/
+
+audio {
+  display: none;
+}

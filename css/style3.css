@@ -60,3 +60,12 @@ img {
   top: -120;
   z-index: 9999;
 }
+
+.enter {
+  background-color: black;
+  color: white;
+}
+
+iframe {
+  display: none;
+}

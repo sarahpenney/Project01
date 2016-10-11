@@ -11,7 +11,7 @@ body {
 
 #encounterTalk {
   margin: auto;
-  left: 185px;
+  left: -100px;
   width: 900px; height: 250px;
   color: purple;
   z-index: 9999;
@@ -19,11 +19,13 @@ body {
   display: none;
 }
 
-.buttons1 {
- position: relative;;
- float: right;
- left: -510px;
- top: 135px;
+.virusbuttons {
+ position: relative;
+ /*float: right;*/
+ left: 395px;
+ top: -50px;
+ color: white;
+ background-color: black;
 }
 
 
@@ -36,7 +38,7 @@ body {
   height: 32px;
   background-color: grey;
   background: url('../images/character.png') no-repeat;
-  z-index: 9999;
+  z-index: 8899;
 }
 
   #character.front-right { background-position: 0px 0px; }
@@ -70,7 +72,7 @@ body {
     background-color: red;
     left: 300px;
     top: 100px;
-    z-index: 9999;
+    z-index: 8888;
     background: url('../images/woman.png') no-repeat;
     background-size: 100%;
   }
@@ -79,3 +81,54 @@ body {
   position: absolute;
   z-index: 1;
 }*/
+
+#correctAnswer {
+  /*display: none;*/
+  width: 54%;
+  height: 75%;
+  position: absolute;
+  left: 350px;
+  z-index: 9999;
+  background-color: black;
+}
+
+#wrongAnswer1 {
+  /*display: none;*/
+  width: 54%;
+  height: 75%;
+  position: absolute;
+  left: 350px;
+  z-index: 9999;
+  background-color: black;
+}
+
+#wrongAnswer2 {
+  /*display: none;*/
+  width: 54%;
+  height: 75%;
+  position: absolute;
+  left: 350px;
+  z-index: 9999;
+  background-color: black;
+}
+
+a {
+  position: absolute;
+  top: 30px;
+  left: 400px;
+}
+
+.guess {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  width: 200px;
+  height: 30px;
+  margin-top: 170px;
+  left: -1000px;
+
+}
+
+iframe {
+  display: none;
+}

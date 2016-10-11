@@ -41,6 +41,8 @@
     left: 300px;
     top: 90px;
     z-index: 9999;
+    background: url('../images/snake1.png') no-repeat;
+    background-size: 100%;
   }
 
   #encounter2 {
@@ -51,6 +53,8 @@
     left: 700px;
     top: 490px;
     z-index: 9999;
+    background: url('../images/snake2.png') no-repeat;
+    background-size: 100%;
   }
 
   #encounter3 {
@@ -61,6 +65,8 @@
     left: 1000px;
     top: 290px;
     z-index: 9999;
+    background: url('../images/snake3.png') no-repeat;
+    background-size: 100%;
   }
 
   #encounter4 {
@@ -71,4 +77,10 @@
     left: 200px;
     top: 490px;
     z-index: 9999;
+    background: url('../images/snake4.png') no-repeat;
+    background-size: 100%;
+  }
+
+  iframe {
+    display: none;
   }

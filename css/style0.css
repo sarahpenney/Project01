@@ -1,3 +1,24 @@
 body {
   background-color: pink;
 }
+
+img {
+ margin-left: 250px;
+ margin-top: 20px;
+}
+
+button {
+  color: grey;
+  background-color: white;
+  height: 70px;
+  width: 200px;
+  font-size: 20px;
+  position: absolute;
+  left:610px;
+  top: 490px;
+  z-index: 9999;
+}
+
+iframe {
+  display: none;
+}
