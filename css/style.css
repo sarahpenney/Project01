@@ -73,7 +73,8 @@ body {
     left: 300px;
     top: 100px;
     z-index: 8888;
-    background: url('../images/woman.png') no-repeat;
+    background: url('../images/woman.png');
+    background: no-repeat;
     background-size: 100%;
   }
 
